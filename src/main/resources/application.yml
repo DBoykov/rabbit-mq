@@ -1,0 +1,15 @@
+rabbit:
+  simple:
+    routing-key: "routing_key_default"
+    queue-name: "queue_default"
+    exchanger-name: "exchanger_default"
+  dead-letter-messages:
+    #routing-key: "routing_key_dlq"
+    queue-name: "queue_dlq"
+    exchanger-name: "exchanger_dlq"
+
+#spring:
+  #rabbitmq:
+    #listener:
+      #simple:
+        #default-requeue-rejected: false
